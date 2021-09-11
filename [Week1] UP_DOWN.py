@@ -23,13 +23,13 @@ while True:
                     start=guess+1
             else:
                 print("정답입니다!\n%d번만에 맞추셨습니다" %(i+1))
-                records.append(i+1)
-                if guess>best_record:
-                    best_record=guess
+                records.append(i+1) #기록을 records리스트에 순서대로 저장
+                if i+1>best_record: #최고기록보다 현재의 기록이 좋을 경우 갱신 및 최고기록 갱신 알림
+                    best_record=i+1
                     print("최고기록 갱신~!")
                 break
     elif option=="2":
-        for i in range(len(records)):
+        for i in range(len(records)): #기록이 저장된 records리스트의 값을 차례로 출력
             print("%d %d" %(i+1, records[i]))
     elif option=="3":
         break
