@@ -69,4 +69,3 @@ except:
 
 f.close()
 fr.close()
-#"|" + nickname + " | " + str(best_record) + "|" + dt_best.date()  " | ") 
