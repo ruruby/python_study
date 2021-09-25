@@ -68,5 +68,5 @@ except:
     print("에러가 발생하여 게임이 종료되었습니다.")
 
 f.close()
-
+fr.close()
 #"|" + nickname + " | " + str(best_record) + "|" + dt_best.date()  " | ") 
